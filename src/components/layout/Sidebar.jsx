@@ -20,15 +20,18 @@ const navItems = [
   { name: 'Enterprise', path: '/enterprise', icon: <Building2 size={18} />, badge: 'Soon', badgeColor: 'grey' }
 ];
 
-export default function Sidebar() {
+export default function Sidebar({ isOpen, closeSidebar }) {
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
       <div className="sidebar-header">
         <div className="logo-stats">
           <div className="logo">
             <div className="logo-icon">X</div>
             <span className="logo-text">Onyx</span>
           </div>
+          <button className="mobile-close-btn" onClick={closeSidebar}>
+             <span style={{fontSize:'28px', lineHeight: 1, paddingBottom: '4px'}}>×</span>
+          </button>
           <div className="price-stats">
             <span className="price">$0.00472</span>
             <span className="diff">0.09%</span>
@@ -48,6 +51,7 @@ export default function Sidebar() {
               <NavLink 
                 to={item.path} 
                 className={({ isActive }) => isActive && item.path !== '#' ? "nav-link active" : "nav-link"}
+                onClick={closeSidebar}
               >
                 <div className="link-content">
                   <span className="icon">{item.icon}</span>

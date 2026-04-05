@@ -191,3 +191,12 @@
 .bridge-submit-btn:hover {
   background-color: #444;
 }
+
+@media (max-width: 768px) {
+  .bridge-card {
+    padding: 16px;
+  }
+  .bridge-route {
+    padding: 16px;
+  }
+}

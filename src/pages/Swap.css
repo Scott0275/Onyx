@@ -167,3 +167,9 @@
 .info-icon {
   opacity: 0.5;
 }
+
+@media (max-width: 768px) {
+  .swap-card {
+    padding: 16px;
+  }
+}

@@ -138,3 +138,19 @@
 .add-liquidity-btn:hover {
   background-color: var(--bg-dark);
 }
+
+@media (max-width: 768px) {
+  .farm-card-top, .farm-card-bottom {
+    padding: 16px;
+  }
+  .farm-stat-row {
+     flex-direction: column;
+     align-items: flex-start;
+     gap: 4px;
+     margin-bottom: 8px;
+  }
+  .farm-pair-info {
+     flex-direction: column;
+     align-items: flex-start;
+  }
+}

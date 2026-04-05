@@ -119,3 +119,12 @@
 .whitelist-btn {
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .whitelist-benefits-card {
+    padding: 24px 16px;
+  }
+  .whitelist-heading {
+    font-size: 20px;
+  }
+}
