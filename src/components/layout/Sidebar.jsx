@@ -1,12 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { 
-  Building2, Wallet, ArrowLeftRight, Clock, Box, Briefcase, Cpu, Trophy, CreditCard, Send, Building, ChevronRight, ExternalLink, Send as Telegram
+  Building2, Wallet, ArrowLeftRight, Clock, Box, Briefcase, Cpu, Trophy, CreditCard, Send, Building, ChevronRight, ExternalLink, Send as Telegram, ShieldCheck
 } from 'lucide-react';
 import './Sidebar.css';
 
 const navItems = [
   { name: 'Staking', path: '/', icon: <Wallet size={18} />, hasChevron: true },
+  { name: 'Whitelist', path: '/whitelist', icon: <ShieldCheck size={18} />, badge: 'VIP', badgeColor: 'green' },
   { name: 'History', path: '/history', icon: <Clock size={18} /> },
   { name: 'Swap', path: '/swap', icon: <ArrowLeftRight size={18} /> },
   { name: 'Bridge', path: '/bridge', icon: <Box size={18} />, hasChevron: true },

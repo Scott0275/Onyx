@@ -6,6 +6,7 @@ import History from './pages/History';
 import Swap from './pages/Swap';
 import Farm from './pages/Farm';
 import Bridge from './pages/Bridge';
+import Whitelist from './pages/Whitelist';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="swap" element={<Swap />} />
           <Route path="farm" element={<Farm />} />
           <Route path="bridge" element={<Bridge />} />
+          <Route path="whitelist" element={<Whitelist />} />
           {/* Default fallback for undefined routes matching sidebar links */}
           <Route path="*" element={<div style={{padding: '48px', textAlign: 'center'}}>Component under construction.</div>} />
         </Route>
@@ -24,3 +26,4 @@ export default function App() {
     </BrowserRouter>
   );
 }
+
